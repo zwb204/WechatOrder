@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.124.13/sell?characterEncoding=utf-8&userSSL=false
+  jpa:
+    show-sql: true
+server:
+  context-path: /sell
+
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+#  #  path: F:\Projects\IDEAProjects\sell
+#  file: F:\Projects\IDEAProjects\sell.log
+#  level:
+#    come.zwb.LoggerTest:debug
