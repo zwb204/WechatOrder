@@ -4,6 +4,7 @@ import com.zwb.dataobject.ProductCategory;
 import com.zwb.dataobject.ProductInfo;
 import com.zwb.service.ProductCategoryService;
 import com.zwb.service.ProductInfoService;
+import com.zwb.utils.ResultVOUtil;
 import com.zwb.vo.ProductInfoVO;
 import com.zwb.vo.ProductVO;
 import com.zwb.vo.ResultVO;
@@ -70,13 +71,7 @@ public class BuyerProductController {
             productVOList.add(productVO);
         }
 
-        ResultVO resultVO = new ResultVO();
-
-        resultVO.setCode(0);
-        resultVO.setMsg("成功");
-        resultVO.setData(productVOList);
-
-        return resultVO;
+        return ResultVOUtil.success(productVOList);
     }
 
 }
