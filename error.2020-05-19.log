@@ -70,3 +70,76 @@
 2020-05-19 10:07:20,657 - Started ProductCategoryServiceImplTest in 5.633 seconds (JVM running for 6.543)
 2020-05-19 10:07:20,792 - Closing org.springframework.web.context.support.GenericWebApplicationContext@5032714f: startup date [Tue May 19 10:07:15 GMT+08:00 2020]; root of context hierarchy
 2020-05-19 10:07:20,795 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 10:27:58,025 - Starting ProductInfoRepositoryTest on LAPTOP-RA493M2E with PID 17180 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-05-19 10:27:58,026 - No active profile set, falling back to default profiles: default
+2020-05-19 10:27:58,080 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5b247367: startup date [Tue May 19 10:27:58 GMT+08:00 2020]; root of context hierarchy
+2020-05-19 10:27:58,668 - HV000001: Hibernate Validator 5.3.5.Final
+2020-05-19 10:28:00,943 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-19 10:28:00,962 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-19 10:28:01,071 - HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-19 10:28:01,072 - HHH000206: hibernate.properties not found
+2020-05-19 10:28:01,073 - HHH000021: Bytecode provider name : javassist
+2020-05-19 10:28:01,113 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-19 10:28:01,250 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-19 10:28:02,393 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 10:28:03,185 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5b247367: startup date [Tue May 19 10:27:58 GMT+08:00 2020]; root of context hierarchy
+2020-05-19 10:28:03,271 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-19 10:28:03,272 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-19 10:28:03,300 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-19 10:28:03,301 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-19 10:28:03,338 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-19 10:28:03,591 - Started ProductInfoRepositoryTest in 6.1 seconds (JVM running for 7.121)
+2020-05-19 10:28:03,704 - SQL Error: 1054, SQLState: 42S22
+2020-05-19 10:28:03,704 - Unknown column 'productinf0_.product_status' in 'field list'
+2020-05-19 10:28:03,705 - HHH000327: Error performing load command : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2020-05-19 10:28:03,723 - Closing org.springframework.web.context.support.GenericWebApplicationContext@5b247367: startup date [Tue May 19 10:27:58 GMT+08:00 2020]; root of context hierarchy
+2020-05-19 10:28:03,727 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 10:31:26,830 - Starting ProductInfoRepositoryTest on LAPTOP-RA493M2E with PID 7204 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-05-19 10:31:26,831 - No active profile set, falling back to default profiles: default
+2020-05-19 10:31:26,859 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5b247367: startup date [Tue May 19 10:31:26 GMT+08:00 2020]; root of context hierarchy
+2020-05-19 10:31:27,365 - HV000001: Hibernate Validator 5.3.5.Final
+2020-05-19 10:31:29,392 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-19 10:31:29,415 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-19 10:31:29,509 - HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-19 10:31:29,511 - HHH000206: hibernate.properties not found
+2020-05-19 10:31:29,512 - HHH000021: Bytecode provider name : javassist
+2020-05-19 10:31:29,551 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-19 10:31:29,666 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-19 10:31:30,737 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 10:31:31,495 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5b247367: startup date [Tue May 19 10:31:26 GMT+08:00 2020]; root of context hierarchy
+2020-05-19 10:31:31,567 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-19 10:31:31,569 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-19 10:31:31,597 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-19 10:31:31,597 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-19 10:31:31,634 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-19 10:31:31,884 - Started ProductInfoRepositoryTest in 5.489 seconds (JVM running for 6.364)
+2020-05-19 10:31:32,021 - Closing org.springframework.web.context.support.GenericWebApplicationContext@5b247367: startup date [Tue May 19 10:31:26 GMT+08:00 2020]; root of context hierarchy
+2020-05-19 10:31:32,023 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 10:35:20,865 - Starting ProductInfoRepositoryTest on LAPTOP-RA493M2E with PID 3116 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-05-19 10:35:20,866 - No active profile set, falling back to default profiles: default
+2020-05-19 10:35:20,911 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5b247367: startup date [Tue May 19 10:35:20 GMT+08:00 2020]; root of context hierarchy
+2020-05-19 10:35:21,374 - HV000001: Hibernate Validator 5.3.5.Final
+2020-05-19 10:35:23,376 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-19 10:35:23,404 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-19 10:35:23,490 - HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-19 10:35:23,491 - HHH000206: hibernate.properties not found
+2020-05-19 10:35:23,493 - HHH000021: Bytecode provider name : javassist
+2020-05-19 10:35:23,532 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-19 10:35:23,664 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-19 10:35:24,791 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 10:35:25,560 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5b247367: startup date [Tue May 19 10:35:20 GMT+08:00 2020]; root of context hierarchy
+2020-05-19 10:35:25,637 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-19 10:35:25,638 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-19 10:35:25,661 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-19 10:35:25,661 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-19 10:35:25,695 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-19 10:35:25,961 - Started ProductInfoRepositoryTest in 5.58 seconds (JVM running for 6.49)
+2020-05-19 10:35:26,044 - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-19 10:35:26,207 - Closing org.springframework.web.context.support.GenericWebApplicationContext@5b247367: startup date [Tue May 19 10:35:20 GMT+08:00 2020]; root of context hierarchy
+2020-05-19 10:35:26,209 - Closing JPA EntityManagerFactory for persistence unit 'default'
