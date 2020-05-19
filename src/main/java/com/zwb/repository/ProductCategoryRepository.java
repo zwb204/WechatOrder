@@ -9,7 +9,7 @@ import java.util.List;
  * @Desc:
  * @Author: zwb
  * @CreateTime: 2019/12/30 11:01
- * 包名repository就是dto
+ * 包名repository就是dao
  **/
 public interface ProductCategoryRepository extends JpaRepository<ProductCategory, Integer> {
 
