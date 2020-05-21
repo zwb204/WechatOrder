@@ -9,7 +9,7 @@ spring:
     show-sql: true
 server:
   context-path: /sell
-  port: 8080
+  port: 7070
 
 #logging:
 #  pattern:

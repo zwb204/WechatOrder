@@ -596,3 +596,118 @@
 2020-05-19 15:27:09,473 - FrameworkServlet 'dispatcherServlet': initialization started
 2020-05-19 15:27:09,494 - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
 2020-05-19 15:27:09,527 - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-19 15:39:55,377 - Starting SellApplication on LAPTOP-RA493M2E with PID 16216 (F:\Projects\IDEAProjects\sell\target\classes started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-05-19 15:39:55,381 - No active profile set, falling back to default profiles: default
+2020-05-19 15:39:55,422 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1189dd52: startup date [Tue May 19 15:39:55 GMT+08:00 2020]; root of context hierarchy
+2020-05-19 15:39:55,646 - HV000001: Hibernate Validator 5.3.5.Final
+2020-05-19 15:39:56,572 - Tomcat initialized with port(s): 8080 (http)
+2020-05-19 15:39:56,583 - Starting service Tomcat
+2020-05-19 15:39:56,584 - Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-05-19 15:39:56,666 - Initializing Spring embedded WebApplicationContext
+2020-05-19 15:39:56,666 - Root WebApplicationContext: initialization completed in 1244 ms
+2020-05-19 15:39:56,786 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-19 15:39:56,790 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-19 15:39:56,791 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-19 15:39:56,791 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-19 15:39:56,791 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-19 15:39:57,228 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-19 15:39:57,239 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-19 15:39:57,298 - HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-19 15:39:57,299 - HHH000206: hibernate.properties not found
+2020-05-19 15:39:57,300 - HHH000021: Bytecode provider name : javassist
+2020-05-19 15:39:57,337 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-19 15:39:57,421 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-19 15:39:57,801 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 15:39:58,177 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1189dd52: startup date [Tue May 19 15:39:55 GMT+08:00 2020]; root of context hierarchy
+2020-05-19 15:39:58,226 - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.zwb.vo.ResultVO com.zwb.controller.BuyerProductController.list()
+2020-05-19 15:39:58,229 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-19 15:39:58,229 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-19 15:39:58,253 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-19 15:39:58,254 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-19 15:39:58,282 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-19 15:39:58,500 - Registering beans for JMX exposure on startup
+2020-05-19 15:39:58,514 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-19 15:39:58,522 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-19 15:39:58,531 - Using a shared selector for servlet write/read
+2020-05-19 15:39:58,544 - Tomcat started on port(s): 8080 (http)
+2020-05-19 15:39:58,548 - Started SellApplication in 3.504 seconds (JVM running for 4.764)
+2020-05-19 15:40:05,654 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-05-19 15:40:05,654 - FrameworkServlet 'dispatcherServlet': initialization started
+2020-05-19 15:40:05,678 - FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2020-05-19 15:40:05,715 - HHH000397: Using ASTQueryTranslatorFactory
+2020-05-19 16:01:21,369 - Starting SellApplication on LAPTOP-RA493M2E with PID 14316 (F:\Projects\IDEAProjects\sell\target\classes started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-05-19 16:01:21,372 - No active profile set, falling back to default profiles: default
+2020-05-19 16:01:21,421 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1189dd52: startup date [Tue May 19 16:01:21 GMT+08:00 2020]; root of context hierarchy
+2020-05-19 16:01:21,612 - HV000001: Hibernate Validator 5.3.5.Final
+2020-05-19 16:01:22,591 - Tomcat initialized with port(s): 8080 (http)
+2020-05-19 16:01:22,601 - Starting service Tomcat
+2020-05-19 16:01:22,602 - Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-05-19 16:01:22,678 - Initializing Spring embedded WebApplicationContext
+2020-05-19 16:01:22,678 - Root WebApplicationContext: initialization completed in 1258 ms
+2020-05-19 16:01:22,797 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-19 16:01:22,801 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-19 16:01:22,802 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-19 16:01:22,802 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-19 16:01:22,802 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-19 16:01:23,285 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-19 16:01:23,297 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-19 16:01:23,370 - HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-19 16:01:23,371 - HHH000206: hibernate.properties not found
+2020-05-19 16:01:23,372 - HHH000021: Bytecode provider name : javassist
+2020-05-19 16:01:23,448 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-19 16:01:23,578 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-19 16:01:23,993 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 16:01:24,399 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1189dd52: startup date [Tue May 19 16:01:21 GMT+08:00 2020]; root of context hierarchy
+2020-05-19 16:01:24,445 - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.zwb.vo.ResultVO com.zwb.controller.BuyerProductController.list()
+2020-05-19 16:01:24,448 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-19 16:01:24,449 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-19 16:01:24,472 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-19 16:01:24,472 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-19 16:01:24,500 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-19 16:01:24,694 - Registering beans for JMX exposure on startup
+2020-05-19 16:01:24,709 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-19 16:01:24,717 - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-19 16:01:24,726 - Using a shared selector for servlet write/read
+2020-05-19 16:01:24,752 - Tomcat started on port(s): 8080 (http)
+2020-05-19 16:01:24,756 - Started SellApplication in 3.732 seconds (JVM running for 4.927)
+2020-05-19 16:06:01,867 - Starting SellApplication on LAPTOP-RA493M2E with PID 8972 (F:\Projects\IDEAProjects\sell\target\classes started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-05-19 16:06:01,869 - No active profile set, falling back to default profiles: default
+2020-05-19 16:06:01,919 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1189dd52: startup date [Tue May 19 16:06:01 GMT+08:00 2020]; root of context hierarchy
+2020-05-19 16:06:02,079 - HV000001: Hibernate Validator 5.3.5.Final
+2020-05-19 16:06:03,143 - Tomcat initialized with port(s): 7070 (http)
+2020-05-19 16:06:03,151 - Starting service Tomcat
+2020-05-19 16:06:03,152 - Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-05-19 16:06:03,231 - Initializing Spring embedded WebApplicationContext
+2020-05-19 16:06:03,231 - Root WebApplicationContext: initialization completed in 1312 ms
+2020-05-19 16:06:03,351 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-19 16:06:03,354 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-19 16:06:03,355 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-19 16:06:03,355 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-19 16:06:03,355 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-19 16:06:03,792 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-19 16:06:03,803 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-19 16:06:03,859 - HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-19 16:06:03,861 - HHH000206: hibernate.properties not found
+2020-05-19 16:06:03,862 - HHH000021: Bytecode provider name : javassist
+2020-05-19 16:06:03,899 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-19 16:06:03,981 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-19 16:06:04,361 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-19 16:06:04,735 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1189dd52: startup date [Tue May 19 16:06:01 GMT+08:00 2020]; root of context hierarchy
+2020-05-19 16:06:04,780 - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.zwb.vo.ResultVO com.zwb.controller.BuyerProductController.list()
+2020-05-19 16:06:04,783 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-19 16:06:04,783 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-19 16:06:04,805 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-19 16:06:04,805 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-19 16:06:04,835 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-19 16:06:05,022 - Registering beans for JMX exposure on startup
+2020-05-19 16:06:05,037 - Initializing ProtocolHandler ["http-nio-7070"]
+2020-05-19 16:06:05,045 - Starting ProtocolHandler ["http-nio-7070"]
+2020-05-19 16:06:05,055 - Using a shared selector for servlet write/read
+2020-05-19 16:06:05,069 - Tomcat started on port(s): 7070 (http)
+2020-05-19 16:06:05,073 - Started SellApplication in 3.597 seconds (JVM running for 4.93)
