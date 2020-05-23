@@ -1,13 +1,17 @@
 package com.zwb.service.impl;
 
 import com.zwb.dataobject.ProductInfo;
+import com.zwb.dto.CartDTO;
 import com.zwb.enums.ProductStatusEnum;
+import com.zwb.enums.ResultEnum;
+import com.zwb.exception.SellException;
 import com.zwb.repository.ProductInfoRepository;
 import com.zwb.service.ProductInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
-import org.springframework.stereotype.Service;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -40,5 +44,28 @@ public class ProductInfoServiceImpl implements ProductInfoService {
     @Override
     public ProductInfo save(ProductInfo productInfo) {
         return productInfoRepository.save(productInfo);
+    }
+
+    @Override
+    public void increaseStock(List<CartDTO> cartDTOList) {
+
+    }
+
+    @Override
+    @Transactional
+    public void decreaseStock(List<CartDTO> cartDTOList) {
+        for (CartDTO cartDTO:cartDTOList){
+            ProductInfo productInfo = productInfoRepository.findOne(cartDTO.getProductId());
+            if (productInfo == null) {
+                throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+            }
+
+            Integer result = productInfo.getProductStock() - cartDTO.getProductQuantity();
+            if (result < 0){
+                throw new SellException(ResultEnum.PRODUCT_STOCT_ERROR);
+            }
+            productInfo.setProductStock(result);
+            productInfoRepository.save(productInfo);
+        }
     }
 }

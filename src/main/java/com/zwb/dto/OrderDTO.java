@@ -1,28 +1,23 @@
-package com.zwb.dataobject;
+package com.zwb.dto;
 
+import com.zwb.dataobject.OrderDetail;
 import com.zwb.enums.OrderStatusEnum;
 import com.zwb.enums.PayStatusEnum;
 import lombok.Data;
-import org.hibernate.annotations.DynamicUpdate;
 
-import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Transient;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
 /**
- * @Desc: 买家订单
+ * @Desc:
  * @Author: zwb
- * @CreateTime: 2020/5/19 17:49
+ * @CreateTime: 2020/5/21 16:11
  **/
-@Entity
 @Data
-@DynamicUpdate
-public class OrderMaster {
+public class OrderDTO {
 
-    @Id
     private String orderId;
 
     private String buyerName;
@@ -38,16 +33,14 @@ public class OrderMaster {
     private BigDecimal orderAmount;
 
     //订单状态，默认新订单
-    private Integer orderStatus = OrderStatusEnum.NEW.getCode();
+    private Integer orderStatus;
 
     //支付状态，默认未支付
-    private Integer payStatus = PayStatusEnum.WAIT.getCode();
+    private Integer payStatus;
 
     private Date createTime;
 
     private Date updateTime;
 
-//    @Transient
-//    private List<OrderDetail> orderDetailList;
-
+    private List<OrderDetail> orderDetailList;
 }
