@@ -2,6 +2,7 @@ package com.zwb.service.impl;
 
 import com.zwb.dataobject.OrderDetail;
 import com.zwb.dto.OrderDTO;
+import com.zwb.enums.OrderStatusEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;
@@ -73,6 +74,9 @@ public class OrderServiceImplTest {
 
     @Test
     public void cancle() {
+        OrderDTO orderDTO = orderService.findOne(ORDERID);
+        OrderDTO result = orderService.cancle(orderDTO);
+        Assert.assertEquals(OrderStatusEnum.CANCEL.getCode(),result.getOrderStatus());
     }
 
     @Test
