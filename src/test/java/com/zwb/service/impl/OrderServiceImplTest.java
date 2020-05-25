@@ -3,6 +3,7 @@ package com.zwb.service.impl;
 import com.zwb.dataobject.OrderDetail;
 import com.zwb.dto.OrderDTO;
 import com.zwb.enums.OrderStatusEnum;
+import com.zwb.enums.PayStatusEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;
@@ -60,7 +61,7 @@ public class OrderServiceImplTest {
 
     @Test
     public void findOne() {
-        OrderDTO result = orderService.findOne(ORDERID);
+        OrderDTO result = orderService.findOne("123455");
         log.info("【查询单个订单】 result = {}",result);
         Assert.assertNotEquals(ORDERID,result.getOrderId());
     }
@@ -81,9 +82,15 @@ public class OrderServiceImplTest {
 
     @Test
     public void finish() {
+        OrderDTO orderDTO = orderService.findOne("123455");
+        OrderDTO result = orderService.finish(orderDTO);
+        Assert.assertEquals(OrderStatusEnum.FINISHED.getCode(),result.getOrderStatus());
     }
 
     @Test
     public void paid() {
+        OrderDTO orderDTO = orderService.findOne("123455");
+        OrderDTO result = orderService.paid(orderDTO);
+        Assert.assertEquals(PayStatusEnum.SUCCESS.getCode(),result.getPayStatus());
     }
 }
