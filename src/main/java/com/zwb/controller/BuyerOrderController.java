@@ -5,6 +5,7 @@ import com.zwb.dto.OrderDTO;
 import com.zwb.enums.ResultEnum;
 import com.zwb.exception.SellException;
 import com.zwb.form.OrderForm;
+import com.zwb.service.BuyerService;
 import com.zwb.service.OrderService;
 import com.zwb.utils.ResultVOUtil;
 import com.zwb.vo.ResultVO;
@@ -35,6 +36,8 @@ public class BuyerOrderController {
 
     @Autowired
     private OrderService orderService;
+    @Autowired
+    private BuyerService buyerService;
 
     //创建订单
     @PostMapping("/create")
@@ -78,8 +81,7 @@ public class BuyerOrderController {
     @GetMapping("/detail")
     public ResultVO<OrderDTO> detail(@RequestParam("openid") String openid,
                                      @RequestParam("orderId") String orderId){
-        //TODO  没用到openid，任何人都可以访问，不安全，改进
-        OrderDTO orderDTO = orderService.findOne(orderId);
+        OrderDTO orderDTO = buyerService.findOrderOne(openid,orderId);
         return ResultVOUtil.success(orderDTO);
     }
 
@@ -87,9 +89,7 @@ public class BuyerOrderController {
     @PostMapping("/cancel")
     public ResultVO cancel(@RequestParam("openid") String openid,
                            @RequestParam("orderId") String orderId){
-        //TODO 没用到openid，任何人都可以访问，不安全，改进
-        OrderDTO orderDTO = orderService.findOne(orderId);
-        orderService.cancle(orderDTO);
+        buyerService.cancalOrder(openid,orderId);
         return ResultVOUtil.success();
     }
 
