@@ -11,7 +11,7 @@ spring:
     default-property-inclusion: non_null
 server:
   context-path: /sell
-  port: 7070
+  port: 8080
 
 #logging:
 #  pattern:
@@ -20,3 +20,7 @@ server:
 #  file: F:\Projects\IDEAProjects\sell.log
 #  level:
 #    come.zwb.LoggerTest:debug
+
+wechat:
+  mpAppId:wx50cc4b29941960d6
+  mpAppSecret:********
