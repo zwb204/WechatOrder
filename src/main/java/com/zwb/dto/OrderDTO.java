@@ -1,10 +1,12 @@
 package com.zwb.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.zwb.dataobject.OrderDetail;
 import com.zwb.enums.OrderStatusEnum;
 import com.zwb.enums.PayStatusEnum;
+import com.zwb.utils.EnumUtil;
 import com.zwb.utils.serializer.Date2LongSerializer;
 import lombok.Data;
 
@@ -51,4 +53,14 @@ public class OrderDTO {
     private Date updateTime;
 
     private List<OrderDetail> orderDetailList;
+
+    @JsonIgnore  //返回json数据是会忽略这个方法
+    public OrderStatusEnum getOrderStatusEnum(){
+        return EnumUtil.getByCode(orderStatus,OrderStatusEnum.class);
+    }
+
+    @JsonIgnore
+    public PayStatusEnum getPayStatusEnum(){
+        return EnumUtil.getByCode(payStatus,PayStatusEnum.class);
+    }
 }

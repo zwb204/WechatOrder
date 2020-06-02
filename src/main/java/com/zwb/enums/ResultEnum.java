@@ -24,6 +24,9 @@ public enum ResultEnum {
 
 
     PARAM_ERROR(1,"参数不正确"),
+    SUCCESS(0,"成功"),
+    ORDER_CANCEL_SUCCESS(22,"订单取消成功"),
+    ORDER_FINISH_SUCCESS(23,"订单完结成功"),
 
     ;
 
