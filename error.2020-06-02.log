@@ -1,0 +1,4 @@
+2020-06-02 09:36:39,699 - Starting OrderServiceImplTest on LAPTOP-RA493M2E with PID 552 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-06-02 09:36:39,700 - No active profile set, falling back to default profiles: default
+2020-06-02 09:36:39,798 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@312aa7c: startup date [Tue Jun 02 09:36:39 GMT+08:00 2020]; root of context hierarchy
+2020-06-02 09:36:40,321 - HV000001: Hibernate Validator 5.3.5.Final
