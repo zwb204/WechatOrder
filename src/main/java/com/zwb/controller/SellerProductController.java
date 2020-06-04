@@ -1,7 +1,10 @@
 package com.zwb.controller;
 
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import com.zwb.dataobject.ProductInfo;
 import com.zwb.dto.OrderDTO;
+import com.zwb.enums.ResultEnum;
+import com.zwb.exception.SellException;
 import com.zwb.service.OrderService;
 import com.zwb.service.ProductInfoService;
 import lombok.extern.slf4j.Slf4j;
@@ -46,5 +49,35 @@ public class SellerProductController {
         map.put("currentPage", page);
         map.put("currentSize", size);
         return new ModelAndView("product/list", map);
+    }
+
+    @GetMapping("/off_sale")
+    public ModelAndView offSale(@RequestParam("productId") String productId,
+                                Map<String,Object> map){
+        try {
+            productInfoService.offSale(productId);
+        } catch (SellException e) {
+            map.put("msg",e.getMessage());
+            map.put("url","/sell/seller/product/list");
+            return new ModelAndView("common/error",map);
+        }
+        map.put("msg", ResultEnum.PRODUCT_OFF_SALE_SUCCESS.getMessage());
+        map.put("url","/sell/seller/product/list");
+        return new ModelAndView("/common/success",map);
+    }
+
+    @GetMapping("/on_sale")
+    public ModelAndView onSale(@RequestParam("productId") String productId,
+                                Map<String,Object> map){
+        try {
+            productInfoService.onSale(productId);
+        } catch (SellException e) {
+            map.put("msg",e.getMessage());
+            map.put("url","/sell/seller/product/list");
+            return new ModelAndView("common/error",map);
+        }
+        map.put("msg", ResultEnum.PRODUCT_ON_SALE_SUCCESS.getMessage());
+        map.put("url","/sell/seller/product/list");
+        return new ModelAndView("/common/success",map);
     }
 }
