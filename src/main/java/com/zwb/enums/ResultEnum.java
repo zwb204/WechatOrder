@@ -30,6 +30,7 @@ public enum ResultEnum {
     PRODUCT_STATUS_ERROR(24,"商品状态错误"),
     PRODUCT_ON_SALE_SUCCESS(25,"商品上架成功"),
     PRODUCT_OFF_SALE_SUCCESS(26,"商品下架成功"),
+    PRODUCT_SAVE_SUCCESS(27,"商品保存成功"),
 
     ;
 

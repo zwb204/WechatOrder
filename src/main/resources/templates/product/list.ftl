@@ -43,7 +43,7 @@
                                     <#if productInfo.getProductStatusEnum().getCode() == 0>
                                         <a href="/sell/seller/product/off_sale?productId=${productInfo.productId}">下架</a>
                                     <#else>
-                                        <a href="/sell/seller/product/on_sale?productId=${productInfo.productId}">在架</a>
+                                        <a href="/sell/seller/product/on_sale?productId=${productInfo.productId}">上架</a>
                                     </#if>
                                 </td>
                             </tr>
