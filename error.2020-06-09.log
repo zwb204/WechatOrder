@@ -1,0 +1,89 @@
+2020-06-09 09:06:38,077 - Starting SellerInfoRepositoryTest on LAPTOP-RA493M2E with PID 24728 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-06-09 09:06:38,077 - No active profile set, falling back to default profiles: default
+2020-06-09 09:06:38,154 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@65987993: startup date [Tue Jun 09 09:06:38 GMT+08:00 2020]; root of context hierarchy
+2020-06-09 09:06:38,766 - HV000001: Hibernate Validator 5.3.6.Final
+2020-06-09 09:06:41,590 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-06-09 09:06:41,623 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-06-09 09:06:41,726 - HHH000412: Hibernate Core {5.0.12.Final}
+2020-06-09 09:06:41,727 - HHH000206: hibernate.properties not found
+2020-06-09 09:06:41,729 - HHH000021: Bytecode provider name : javassist
+2020-06-09 09:06:42,123 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-06-09 09:06:42,345 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-06-09 09:06:43,648 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-09 09:06:47,285 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@65987993: startup date [Tue Jun 09 09:06:38 GMT+08:00 2020]; root of context hierarchy
+2020-06-09 09:06:47,386 - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.zwb.vo.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.zwb.controller.BuyerOrderController.create(com.zwb.form.OrderForm,org.springframework.validation.BindingResult)
+2020-06-09 09:06:47,388 - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.zwb.vo.ResultVO<java.util.List<com.zwb.dto.OrderDTO>> com.zwb.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2020-06-09 09:06:47,389 - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.zwb.vo.ResultVO com.zwb.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2020-06-09 09:06:47,389 - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.zwb.vo.ResultVO<com.zwb.dto.OrderDTO> com.zwb.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2020-06-09 09:06:47,390 - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.zwb.vo.ResultVO com.zwb.controller.BuyerProductController.list()
+2020-06-09 09:06:47,391 - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:06:47,391 - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:06:47,391 - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerCategoryController.save(com.zwb.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:06:47,394 - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:06:47,394 - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:06:47,395 - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:06:47,395 - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:06:47,397 - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:06:47,398 - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:06:47,398 - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.save(com.zwb.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:06:47,399 - Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:06:47,399 - Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:06:47,400 - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.zwb.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+2020-06-09 09:06:47,401 - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.zwb.controller.WeChatController.authorize(java.lang.String)
+2020-06-09 09:06:47,403 - Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.zwb.controller.WeixinController.auth(java.lang.String)
+2020-06-09 09:06:47,406 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-06-09 09:06:47,408 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-06-09 09:06:47,439 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-09 09:06:47,439 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-09 09:06:47,487 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-09 09:06:47,819 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-06-09 09:06:48,008 - Started SellerInfoRepositoryTest in 11.063 seconds (JVM running for 13.996)
+2020-06-09 09:06:48,176 - Closing org.springframework.web.context.support.GenericWebApplicationContext@65987993: startup date [Tue Jun 09 09:06:38 GMT+08:00 2020]; root of context hierarchy
+2020-06-09 09:06:48,182 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-09 09:07:35,252 - Starting SellerInfoRepositoryTest on LAPTOP-RA493M2E with PID 26812 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-06-09 09:07:35,259 - No active profile set, falling back to default profiles: default
+2020-06-09 09:07:35,310 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@65987993: startup date [Tue Jun 09 09:07:35 GMT+08:00 2020]; root of context hierarchy
+2020-06-09 09:07:35,782 - HV000001: Hibernate Validator 5.3.6.Final
+2020-06-09 09:07:38,502 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-06-09 09:07:38,534 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-06-09 09:07:38,640 - HHH000412: Hibernate Core {5.0.12.Final}
+2020-06-09 09:07:38,642 - HHH000206: hibernate.properties not found
+2020-06-09 09:07:38,644 - HHH000021: Bytecode provider name : javassist
+2020-06-09 09:07:38,694 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-06-09 09:07:38,879 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-06-09 09:07:40,122 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-09 09:07:42,207 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@65987993: startup date [Tue Jun 09 09:07:35 GMT+08:00 2020]; root of context hierarchy
+2020-06-09 09:07:42,306 - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.zwb.vo.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.zwb.controller.BuyerOrderController.create(com.zwb.form.OrderForm,org.springframework.validation.BindingResult)
+2020-06-09 09:07:42,309 - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.zwb.vo.ResultVO<java.util.List<com.zwb.dto.OrderDTO>> com.zwb.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2020-06-09 09:07:42,310 - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.zwb.vo.ResultVO com.zwb.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2020-06-09 09:07:42,311 - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.zwb.vo.ResultVO<com.zwb.dto.OrderDTO> com.zwb.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2020-06-09 09:07:42,311 - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.zwb.vo.ResultVO com.zwb.controller.BuyerProductController.list()
+2020-06-09 09:07:42,313 - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:07:42,314 - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:07:42,314 - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerCategoryController.save(com.zwb.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:07:42,315 - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:07:42,316 - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:07:42,316 - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:07:42,317 - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:07:42,321 - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:07:42,322 - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:07:42,322 - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.save(com.zwb.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:07:42,323 - Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:07:42,324 - Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-09 09:07:42,324 - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.zwb.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+2020-06-09 09:07:42,325 - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.zwb.controller.WeChatController.authorize(java.lang.String)
+2020-06-09 09:07:42,329 - Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.zwb.controller.WeixinController.auth(java.lang.String)
+2020-06-09 09:07:42,330 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-06-09 09:07:42,331 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-06-09 09:07:42,360 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-09 09:07:42,363 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-09 09:07:42,407 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-09 09:07:42,736 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-06-09 09:07:42,916 - Started SellerInfoRepositoryTest in 8.163 seconds (JVM running for 9.3)
+2020-06-09 09:07:43,019 - HHH000397: Using ASTQueryTranslatorFactory
+2020-06-09 09:07:43,260 - Closing org.springframework.web.context.support.GenericWebApplicationContext@65987993: startup date [Tue Jun 09 09:07:35 GMT+08:00 2020]; root of context hierarchy
+2020-06-09 09:07:43,265 - Closing JPA EntityManagerFactory for persistence unit 'default'
