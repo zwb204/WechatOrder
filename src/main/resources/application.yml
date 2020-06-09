@@ -24,3 +24,11 @@ server:
 wechat:
   mpAppId:wx50cc4b29941960d6
   mpAppSecret:********
+
+  openAppId:*********
+  openAppSecret:*******
+
+projectUrl:
+  wechatMpAuthorize:127.0.0.1:8080
+  wechatOpenAuthorize:127.0.0.1:8080
+  sell:
