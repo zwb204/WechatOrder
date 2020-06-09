@@ -9,6 +9,9 @@ spring:
     show-sql: true
   jackson:
     default-property-inclusion: non_null
+  redis:
+    host: 192.168.1.97
+    port: 6379
 server:
   context-path: /sell
   port: 8080
@@ -22,13 +25,13 @@ server:
 #    come.zwb.LoggerTest:debug
 
 wechat:
-  mpAppId:wx50cc4b29941960d6
-  mpAppSecret:********
+  mpAppId: wx50cc4b29941960d6
+  mpAppSecret: 234234
 
-  openAppId:*********
-  openAppSecret:*******
+  openAppId: 2342432
+  openAppSecret: 3242343
 
 projectUrl:
-  wechatMpAuthorize:127.0.0.1:8080
-  wechatOpenAuthorize:127.0.0.1:8080
-  sell:
+  wechatMpAuthorize: 127.0.0.1:8080
+  wechatOpenAuthorize: 127.0.0.1:8080
+  sell: 127.0.0.1:8080

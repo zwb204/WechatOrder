@@ -32,6 +32,8 @@ public enum ResultEnum {
     PRODUCT_OFF_SALE_SUCCESS(26,"商品下架成功"),
     PRODUCT_SAVE_SUCCESS(27,"商品保存成功"),
 
+    LOGIN_FAIL(28,"登录失败，登录信息不正确"),
+    LOGOUT_SUCCESS(29,"登出成功"),
     ;
 
 
