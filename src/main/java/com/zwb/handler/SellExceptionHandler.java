@@ -1,4 +1,4 @@
-package com.zwb.aspect;
+package com.zwb.handler;
 
 import com.zwb.config.ProjectUrlConfig;
 import com.zwb.exception.SellerAuthorizeException;
