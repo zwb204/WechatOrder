@@ -25,11 +25,13 @@ server:
 #    come.zwb.LoggerTest:debug
 
 wechat:
-  mpAppId: wx50cc4b29941960d6
-  mpAppSecret: 234234
+  mpAppId: wx96bb05f2082750d0
+  mpAppSecret: a1fb02d193cd449a46d4e7758270ba09
 
   openAppId: 2342432
   openAppSecret: 3242343
+  templateId:
+    orderStatus: FN-fae6IAMDwPc1a6YkicFfrlxcdJdsBRrhozLY2Lp8
 
 projectUrl:
   wechatMpAuthorize: 127.0.0.1:8080

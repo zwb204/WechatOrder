@@ -14,6 +14,7 @@ import com.zwb.repository.OrderDetailRepository;
 import com.zwb.repository.OrderMasterRepository;
 import com.zwb.service.OrderService;
 import com.zwb.service.ProductInfoService;
+import com.zwb.service.PushMessageService;
 import com.zwb.utils.KeyUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.weaver.ast.Or;
@@ -49,6 +50,9 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired
     private ProductInfoService productInfoService;
+
+    @Autowired
+    private PushMessageService pushMessageService;
 
     @Override
     @Transactional
@@ -185,6 +189,10 @@ public class OrderServiceImpl implements OrderService {
             log.error("【完结订单】 更新失败，orderMaster={}",orderMaster);
             throw new SellException(ResultEnum.ORDER_UPDATE_FAIL);
         }
+
+        //订单完结，微信模板消息推送
+        pushMessageService.orderStatus(orderDTO);
+
         return orderDTO;
     }
 
