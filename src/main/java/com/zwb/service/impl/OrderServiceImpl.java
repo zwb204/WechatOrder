@@ -1,5 +1,6 @@
 package com.zwb.service.impl;
 
+import com.zwb.config.WebSocketConfig;
 import com.zwb.converter.OrderMaster2OrderDTOConverter;
 import com.zwb.dataobject.OrderDetail;
 import com.zwb.dataobject.OrderMaster;
@@ -15,6 +16,7 @@ import com.zwb.repository.OrderMasterRepository;
 import com.zwb.service.OrderService;
 import com.zwb.service.ProductInfoService;
 import com.zwb.service.PushMessageService;
+import com.zwb.service.WebSocket;
 import com.zwb.utils.KeyUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.weaver.ast.Or;
@@ -53,6 +55,9 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired
     private PushMessageService pushMessageService;
+
+    @Autowired
+    private WebSocket webSocket;
 
     @Override
     @Transactional
@@ -105,6 +110,8 @@ public class OrderServiceImpl implements OrderService {
         ).collect(Collectors.toList());
         productInfoService.decreaseStock(cartDTOList);
 
+        //发送websocket消息
+        webSocket.sendMessage(orderDTO.getOrderId());
         return orderDTO;
     }
 
