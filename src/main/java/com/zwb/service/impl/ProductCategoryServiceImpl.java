@@ -1,6 +1,7 @@
 package com.zwb.service.impl;
 
 import com.zwb.dataobject.ProductCategory;
+import com.zwb.dataobject.dao.ProductCategoryDao;
 import com.zwb.repository.ProductCategoryRepository;
 import com.zwb.service.ProductCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,10 +20,18 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
     @Autowired
     private ProductCategoryRepository productCategoryRepository;
 
+//    @Autowired
+//    private ProductCategoryDao productCategoryDao;
+
     @Override
     public ProductCategory findOne(Integer catagoryId) {
         return productCategoryRepository.findOne(catagoryId);
     }
+
+//    @Override
+//    public ProductCategory findOneByCategoryType(Integer catagoryCategory) {
+//        return productCategoryDao.findOneByCategoryType(catagoryCategory);
+//    }
 
     @Override
     public List<ProductCategory> findAll() {

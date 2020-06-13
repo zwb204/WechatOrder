@@ -21,11 +21,12 @@ import static org.junit.Assert.*;
  * @CreateTime: 2020/5/19 9:52
  **/
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class ProductCategoryServiceImplTest {
 
     @Autowired
     private ProductCategoryServiceImpl productCategoryService;
+
     @Test
     public void findOne() {
         ProductCategory productCategory = productCategoryService.findOne(1);
@@ -50,4 +51,10 @@ public class ProductCategoryServiceImplTest {
         ProductCategory result = productCategoryService.save(productCategory);
         Assert.assertNotNull(result);
     }
+
+//    @Test
+//    public void findOneByCategoryType() {
+//        ProductCategory result = productCategoryService.findOneByCategoryType(101);
+//        Assert.assertNotNull(result);
+//    }
 }

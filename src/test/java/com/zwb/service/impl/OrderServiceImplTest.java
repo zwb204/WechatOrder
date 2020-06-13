@@ -25,7 +25,7 @@ import static org.junit.Assert.*;
  * @CreateTime: 2020/5/23 22:50
  **/
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @Slf4j
 public class OrderServiceImplTest {
 

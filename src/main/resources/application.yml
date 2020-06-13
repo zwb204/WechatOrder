@@ -37,3 +37,10 @@ projectUrl:
   wechatMpAuthorize: 127.0.0.1:8080
   wechatOpenAuthorize: 127.0.0.1:8080
   sell: 127.0.0.1:8080
+
+logging:
+  level:
+    com.zwb.dataobject.mapper: trace   //日志级别设置为trace，可打印出sql
+
+#debug: true
+

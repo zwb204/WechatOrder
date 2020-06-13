@@ -1,0 +1,788 @@
+2020-06-13 21:04:54,372 - Starting ProductCategoryServiceImplTest on LAPTOP-RA493M2E with PID 1752 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-06-13 21:04:54,375 - No active profile set, falling back to default profiles: default
+2020-06-13 21:04:54,425 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6d5620ce: startup date [Sat Jun 13 21:04:54 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:04:54,875 - HV000001: Hibernate Validator 5.3.6.Final
+2020-06-13 21:04:56,332 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:04:56,412 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:04:56,459 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderMasterRepository.
+2020-06-13 21:04:56,460 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.SellerInfoRepository.
+2020-06-13 21:04:56,461 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderDetailRepository.
+2020-06-13 21:04:56,461 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductCategoryRepository.
+2020-06-13 21:04:56,462 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductInfoRepository.
+2020-06-13 21:04:58,916 - Tomcat initialized with port(s): 0 (http)
+2020-06-13 21:04:58,933 - Starting service [Tomcat]
+2020-06-13 21:04:58,934 - Starting Servlet Engine: Apache Tomcat/8.5.23
+2020-06-13 21:04:59,117 - Initializing Spring embedded WebApplicationContext
+2020-06-13 21:04:59,118 - Root WebApplicationContext: initialization completed in 4693 ms
+2020-06-13 21:04:59,329 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-06-13 21:04:59,333 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-06-13 21:04:59,333 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-06-13 21:04:59,333 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-06-13 21:04:59,333 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-06-13 21:05:20,963 - Unable to determine jdbc url from datasource
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:339)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:366)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:139)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:105)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$3a0e8f04.CGLIB$jpaVendorAdapter$3(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$3a0e8f04$$FastClassBySpringCGLIB$$174a30b3.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$3a0e8f04.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1080)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326)
+	... 86 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 87 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 110 common frames omitted
+2020-06-13 21:05:42,043 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:05:42,068 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-06-13 21:05:42,167 - HHH000412: Hibernate Core {5.0.12.Final}
+2020-06-13 21:05:42,168 - HHH000206: hibernate.properties not found
+2020-06-13 21:05:42,170 - HHH000021: Bytecode provider name : javassist
+2020-06-13 21:05:42,270 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-06-13 21:06:03,452 - HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2020-06-13 21:06:03,455 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2020-06-13 21:06:03,457 - Stopping service [Tomcat]
+2020-06-13 21:06:03,472 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-06-13 21:06:03,572 - Starting ProductCategoryServiceImplTest on LAPTOP-RA493M2E with PID 1752 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-06-13 21:06:03,572 - No active profile set, falling back to default profiles: default
+2020-06-13 21:06:03,576 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64aeaf29: startup date [Sat Jun 13 21:06:03 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:06:04,043 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:06:04,088 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:06:04,124 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderMasterRepository.
+2020-06-13 21:06:04,126 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.SellerInfoRepository.
+2020-06-13 21:06:04,126 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderDetailRepository.
+2020-06-13 21:06:04,127 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductCategoryRepository.
+2020-06-13 21:06:04,127 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductInfoRepository.
+2020-06-13 21:06:04,405 - Tomcat initialized with port(s): 0 (http)
+2020-06-13 21:06:04,406 - Starting service [Tomcat]
+2020-06-13 21:06:04,407 - Starting Servlet Engine: Apache Tomcat/8.5.23
+2020-06-13 21:06:04,439 - Initializing Spring embedded WebApplicationContext
+2020-06-13 21:06:04,443 - Root WebApplicationContext: initialization completed in 867 ms
+2020-06-13 21:06:04,654 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-06-13 21:06:04,655 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-06-13 21:06:04,655 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-06-13 21:06:04,656 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-06-13 21:06:04,657 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-06-13 21:06:06,830 - Unable to determine jdbc url from datasource
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:339)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:366)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:139)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:105)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$3a0e8f04.CGLIB$jpaVendorAdapter$3(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$3a0e8f04$$FastClassBySpringCGLIB$$174a30b3.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$3a0e8f04.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1080)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:54)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326)
+	... 85 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 86 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 109 common frames omitted
+2020-06-13 21:06:08,880 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:06:08,880 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-06-13 21:06:10,905 - HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2020-06-13 21:06:10,906 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2020-06-13 21:06:10,908 - Stopping service [Tomcat]
+2020-06-13 21:06:10,923 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-06-13 21:06:21,601 - Starting ProductCategoryServiceImplTest on LAPTOP-RA493M2E with PID 11260 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-06-13 21:06:21,602 - No active profile set, falling back to default profiles: default
+2020-06-13 21:06:21,654 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17503f6b: startup date [Sat Jun 13 21:06:21 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:06:22,107 - HV000001: Hibernate Validator 5.3.6.Final
+2020-06-13 21:06:23,115 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:06:23,345 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:06:23,424 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderMasterRepository.
+2020-06-13 21:06:23,425 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.SellerInfoRepository.
+2020-06-13 21:06:23,426 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderDetailRepository.
+2020-06-13 21:06:23,427 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductCategoryRepository.
+2020-06-13 21:06:23,427 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductInfoRepository.
+2020-06-13 21:06:25,311 - Tomcat initialized with port(s): 0 (http)
+2020-06-13 21:06:25,325 - Starting service [Tomcat]
+2020-06-13 21:06:25,326 - Starting Servlet Engine: Apache Tomcat/8.5.23
+2020-06-13 21:06:25,486 - Initializing Spring embedded WebApplicationContext
+2020-06-13 21:06:25,486 - Root WebApplicationContext: initialization completed in 3832 ms
+2020-06-13 21:06:25,787 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-06-13 21:06:25,792 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-06-13 21:06:25,793 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-06-13 21:06:25,794 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-06-13 21:06:25,794 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-06-13 21:06:28,506 - Unable to determine jdbc url from datasource
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:339)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:366)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:139)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:105)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$d79f459.CGLIB$jpaVendorAdapter$5(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$d79f459$$FastClassBySpringCGLIB$$d16343fa.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$d79f459.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1080)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326)
+	... 94 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 95 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 118 common frames omitted
+2020-06-13 21:06:30,579 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:06:30,599 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-06-13 21:06:30,689 - HHH000412: Hibernate Core {5.0.12.Final}
+2020-06-13 21:06:30,691 - HHH000206: hibernate.properties not found
+2020-06-13 21:06:30,693 - HHH000021: Bytecode provider name : javassist
+2020-06-13 21:06:30,750 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-06-13 21:06:33,020 - HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2020-06-13 21:06:33,025 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2020-06-13 21:06:33,027 - Stopping service [Tomcat]
+2020-06-13 21:06:33,045 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-06-13 21:06:33,216 - Starting ProductCategoryServiceImplTest on LAPTOP-RA493M2E with PID 11260 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-06-13 21:06:33,217 - No active profile set, falling back to default profiles: default
+2020-06-13 21:06:33,219 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@45843650: startup date [Sat Jun 13 21:06:33 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:06:33,738 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:06:33,785 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:06:33,816 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderMasterRepository.
+2020-06-13 21:06:33,816 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.SellerInfoRepository.
+2020-06-13 21:06:33,817 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderDetailRepository.
+2020-06-13 21:06:33,817 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductCategoryRepository.
+2020-06-13 21:06:33,818 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductInfoRepository.
+2020-06-13 21:06:34,162 - Tomcat initialized with port(s): 0 (http)
+2020-06-13 21:06:34,163 - Starting service [Tomcat]
+2020-06-13 21:06:34,163 - Starting Servlet Engine: Apache Tomcat/8.5.23
+2020-06-13 21:06:34,192 - Initializing Spring embedded WebApplicationContext
+2020-06-13 21:06:34,195 - Root WebApplicationContext: initialization completed in 976 ms
+2020-06-13 21:06:34,421 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-06-13 21:06:34,422 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-06-13 21:06:34,423 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-06-13 21:06:34,423 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-06-13 21:06:34,423 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-06-13 21:06:37,211 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:06:37,212 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-06-13 21:06:37,242 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-06-13 21:06:37,966 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:06:41,197 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'buyerProductController': Unsatisfied dependency expressed through field 'productCategoryService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productCategoryServiceImpl': Unsatisfied dependency expressed through field 'productCategoryDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zwb.dataobject.dao.ProductCategoryDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-06-13 21:06:41,199 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:06:41,203 - Stopping service [Tomcat]
+2020-06-13 21:06:41,214 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-06-13 21:08:39,832 - Starting ProductCategoryServiceImplTest on LAPTOP-RA493M2E with PID 6828 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-06-13 21:08:39,844 - No active profile set, falling back to default profiles: default
+2020-06-13 21:08:39,924 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6d5620ce: startup date [Sat Jun 13 21:08:39 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:08:40,742 - HV000001: Hibernate Validator 5.3.6.Final
+2020-06-13 21:08:41,479 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:08:41,562 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:08:41,606 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderMasterRepository.
+2020-06-13 21:08:41,607 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.SellerInfoRepository.
+2020-06-13 21:08:41,608 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderDetailRepository.
+2020-06-13 21:08:41,608 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductCategoryRepository.
+2020-06-13 21:08:41,609 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductInfoRepository.
+2020-06-13 21:08:43,570 - Tomcat initialized with port(s): 0 (http)
+2020-06-13 21:08:43,583 - Starting service [Tomcat]
+2020-06-13 21:08:43,584 - Starting Servlet Engine: Apache Tomcat/8.5.23
+2020-06-13 21:08:43,749 - Initializing Spring embedded WebApplicationContext
+2020-06-13 21:08:43,750 - Root WebApplicationContext: initialization completed in 3827 ms
+2020-06-13 21:08:44,002 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-06-13 21:08:44,006 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-06-13 21:08:44,007 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-06-13 21:08:44,007 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-06-13 21:08:44,007 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-06-13 21:08:44,712 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:08:44,733 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-06-13 21:08:44,833 - HHH000412: Hibernate Core {5.0.12.Final}
+2020-06-13 21:08:44,834 - HHH000206: hibernate.properties not found
+2020-06-13 21:08:44,836 - HHH000021: Bytecode provider name : javassist
+2020-06-13 21:08:44,882 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-06-13 21:08:45,060 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-06-13 21:08:45,573 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:08:47,806 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6d5620ce: startup date [Sat Jun 13 21:08:39 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:08:47,904 - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.zwb.vo.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.zwb.controller.BuyerOrderController.create(com.zwb.form.OrderForm,org.springframework.validation.BindingResult)
+2020-06-13 21:08:47,905 - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.zwb.vo.ResultVO<java.util.List<com.zwb.dto.OrderDTO>> com.zwb.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2020-06-13 21:08:47,906 - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.zwb.vo.ResultVO com.zwb.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2020-06-13 21:08:47,906 - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.zwb.vo.ResultVO<com.zwb.dto.OrderDTO> com.zwb.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2020-06-13 21:08:47,907 - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.zwb.vo.ResultVO com.zwb.controller.BuyerProductController.list()
+2020-06-13 21:08:47,908 - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:08:47,908 - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:08:47,909 - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerCategoryController.save(com.zwb.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:08:47,910 - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:08:47,910 - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:08:47,911 - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:08:47,911 - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:08:47,913 - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:08:47,914 - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:08:47,914 - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.save(com.zwb.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:08:47,915 - Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:08:47,915 - Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:08:47,916 - Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:08:47,916 - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:08:47,921 - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.zwb.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+2020-06-13 21:08:47,921 - Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.zwb.controller.WeChatController.qrAuthorize(java.lang.String)
+2020-06-13 21:08:47,922 - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.zwb.controller.WeChatController.authorize(java.lang.String)
+2020-06-13 21:08:47,922 - Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.zwb.controller.WeChatController.qrUserInfo(java.lang.String,java.lang.String)
+2020-06-13 21:08:47,922 - Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.zwb.controller.WeixinController.auth(java.lang.String)
+2020-06-13 21:08:47,924 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-06-13 21:08:47,924 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-06-13 21:08:47,960 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-13 21:08:47,960 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-13 21:08:47,977 - Detected @ExceptionHandler methods in sellExceptionHandler
+2020-06-13 21:08:48,002 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-13 21:08:48,440 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-06-13 21:08:48,659 - Registering @ServerEndpoint class: class com.zwb.service.WebSocket
+2020-06-13 21:08:48,690 - Initializing ProtocolHandler ["http-nio-auto-1"]
+2020-06-13 21:08:48,706 - Starting ProtocolHandler ["http-nio-auto-1"]
+2020-06-13 21:08:48,718 - Using a shared selector for servlet write/read
+2020-06-13 21:08:48,955 - Tomcat started on port(s): 6626 (http)
+2020-06-13 21:08:48,960 - Started ProductCategoryServiceImplTest in 9.98 seconds (JVM running for 11.641)
+2020-06-13 21:08:49,039 - HHH000397: Using ASTQueryTranslatorFactory
+2020-06-13 21:08:49,253 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6d5620ce: startup date [Sat Jun 13 21:08:39 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:08:49,256 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:09:38,843 - Starting ProductCategoryMapperTest on LAPTOP-RA493M2E with PID 7080 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-06-13 21:09:38,848 - No active profile set, falling back to default profiles: default
+2020-06-13 21:09:38,872 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2438dcd: startup date [Sat Jun 13 21:09:38 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:09:39,374 - HV000001: Hibernate Validator 5.3.6.Final
+2020-06-13 21:09:40,180 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:09:40,300 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:09:40,357 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderMasterRepository.
+2020-06-13 21:09:40,359 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.SellerInfoRepository.
+2020-06-13 21:09:40,365 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderDetailRepository.
+2020-06-13 21:09:40,368 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductCategoryRepository.
+2020-06-13 21:09:40,369 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductInfoRepository.
+2020-06-13 21:09:42,342 - Tomcat initialized with port(s): 0 (http)
+2020-06-13 21:09:42,358 - Starting service [Tomcat]
+2020-06-13 21:09:42,360 - Starting Servlet Engine: Apache Tomcat/8.5.23
+2020-06-13 21:09:42,498 - Initializing Spring embedded WebApplicationContext
+2020-06-13 21:09:42,499 - Root WebApplicationContext: initialization completed in 3627 ms
+2020-06-13 21:09:42,700 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-06-13 21:09:42,705 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-06-13 21:09:42,705 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-06-13 21:09:42,705 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-06-13 21:09:42,705 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-06-13 21:09:43,404 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:09:43,430 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-06-13 21:09:43,521 - HHH000412: Hibernate Core {5.0.12.Final}
+2020-06-13 21:09:43,523 - HHH000206: hibernate.properties not found
+2020-06-13 21:09:43,525 - HHH000021: Bytecode provider name : javassist
+2020-06-13 21:09:43,569 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-06-13 21:09:43,733 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-06-13 21:09:44,232 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:09:46,361 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2438dcd: startup date [Sat Jun 13 21:09:38 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:09:46,480 - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.zwb.vo.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.zwb.controller.BuyerOrderController.create(com.zwb.form.OrderForm,org.springframework.validation.BindingResult)
+2020-06-13 21:09:46,481 - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.zwb.vo.ResultVO<java.util.List<com.zwb.dto.OrderDTO>> com.zwb.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2020-06-13 21:09:46,482 - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.zwb.vo.ResultVO com.zwb.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2020-06-13 21:09:46,482 - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.zwb.vo.ResultVO<com.zwb.dto.OrderDTO> com.zwb.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2020-06-13 21:09:46,483 - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.zwb.vo.ResultVO com.zwb.controller.BuyerProductController.list()
+2020-06-13 21:09:46,485 - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:09:46,486 - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:09:46,487 - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerCategoryController.save(com.zwb.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:09:46,488 - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:09:46,489 - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:09:46,489 - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:09:46,489 - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:09:46,492 - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:09:46,493 - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:09:46,493 - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.save(com.zwb.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:09:46,493 - Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:09:46,494 - Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:09:46,495 - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:09:46,496 - Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:09:46,501 - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.zwb.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+2020-06-13 21:09:46,502 - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.zwb.controller.WeChatController.authorize(java.lang.String)
+2020-06-13 21:09:46,503 - Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.zwb.controller.WeChatController.qrUserInfo(java.lang.String,java.lang.String)
+2020-06-13 21:09:46,503 - Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.zwb.controller.WeChatController.qrAuthorize(java.lang.String)
+2020-06-13 21:09:46,504 - Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.zwb.controller.WeixinController.auth(java.lang.String)
+2020-06-13 21:09:46,505 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-06-13 21:09:46,506 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-06-13 21:09:46,545 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-13 21:09:46,546 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-13 21:09:46,564 - Detected @ExceptionHandler methods in sellExceptionHandler
+2020-06-13 21:09:46,601 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-13 21:09:46,993 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-06-13 21:09:47,151 - Registering @ServerEndpoint class: class com.zwb.service.WebSocket
+2020-06-13 21:09:47,175 - Initializing ProtocolHandler ["http-nio-auto-1"]
+2020-06-13 21:09:47,188 - Starting ProtocolHandler ["http-nio-auto-1"]
+2020-06-13 21:09:47,204 - Using a shared selector for servlet write/read
+2020-06-13 21:09:47,460 - Tomcat started on port(s): 6697 (http)
+2020-06-13 21:09:47,465 - Started ProductCategoryMapperTest in 9.167 seconds (JVM running for 10.333)
+2020-06-13 21:09:47,560 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2438dcd: startup date [Sat Jun 13 21:09:38 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:09:47,564 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:11:24,859 - Starting ProductCategoryMapperTest on LAPTOP-RA493M2E with PID 17772 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-06-13 21:11:24,865 - No active profile set, falling back to default profiles: default
+2020-06-13 21:11:24,889 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2438dcd: startup date [Sat Jun 13 21:11:24 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:11:25,421 - HV000001: Hibernate Validator 5.3.6.Final
+2020-06-13 21:11:26,438 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:11:26,654 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:11:26,754 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderMasterRepository.
+2020-06-13 21:11:26,767 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.SellerInfoRepository.
+2020-06-13 21:11:26,768 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderDetailRepository.
+2020-06-13 21:11:26,770 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductCategoryRepository.
+2020-06-13 21:11:26,773 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductInfoRepository.
+2020-06-13 21:11:28,915 - Tomcat initialized with port(s): 0 (http)
+2020-06-13 21:11:28,937 - Starting service [Tomcat]
+2020-06-13 21:11:28,939 - Starting Servlet Engine: Apache Tomcat/8.5.23
+2020-06-13 21:11:29,074 - Initializing Spring embedded WebApplicationContext
+2020-06-13 21:11:29,074 - Root WebApplicationContext: initialization completed in 4185 ms
+2020-06-13 21:11:29,262 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-06-13 21:11:29,266 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-06-13 21:11:29,267 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-06-13 21:11:29,267 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-06-13 21:11:29,268 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-06-13 21:11:29,999 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:11:30,020 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-06-13 21:11:30,101 - HHH000412: Hibernate Core {5.0.12.Final}
+2020-06-13 21:11:30,103 - HHH000206: hibernate.properties not found
+2020-06-13 21:11:30,105 - HHH000021: Bytecode provider name : javassist
+2020-06-13 21:11:30,164 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-06-13 21:11:30,307 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-06-13 21:11:30,846 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:11:33,308 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2438dcd: startup date [Sat Jun 13 21:11:24 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:11:33,401 - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.zwb.vo.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.zwb.controller.BuyerOrderController.create(com.zwb.form.OrderForm,org.springframework.validation.BindingResult)
+2020-06-13 21:11:33,401 - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.zwb.vo.ResultVO<java.util.List<com.zwb.dto.OrderDTO>> com.zwb.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+2020-06-13 21:11:33,403 - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.zwb.vo.ResultVO com.zwb.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+2020-06-13 21:11:33,405 - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.zwb.vo.ResultVO<com.zwb.dto.OrderDTO> com.zwb.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+2020-06-13 21:11:33,405 - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.zwb.vo.ResultVO com.zwb.controller.BuyerProductController.list()
+2020-06-13 21:11:33,406 - Mapped "{[/seller/category/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerCategoryController.index(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:11:33,407 - Mapped "{[/seller/category/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerCategoryController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:11:33,407 - Mapped "{[/seller/category/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerCategoryController.save(com.zwb.form.CategoryForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:11:33,408 - Mapped "{[/seller/order/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:11:33,409 - Mapped "{[/seller/order/cancel],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerOrderController.cancel(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:11:33,409 - Mapped "{[/seller/order/detail],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerOrderController.detail(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:11:33,409 - Mapped "{[/seller/order/finish],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerOrderController.finish(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:11:33,411 - Mapped "{[/seller/product/index],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.index(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:11:33,411 - Mapped "{[/seller/product/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:11:33,411 - Mapped "{[/seller/product/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.save(com.zwb.form.ProductForm,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:11:33,412 - Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.onSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:11:33,412 - Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerProductController.offSale(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:11:33,413 - Mapped "{[/seller/logout],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:11:33,413 - Mapped "{[/seller/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.zwb.controller.SellerUserController.login(java.lang.String,javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>)
+2020-06-13 21:11:33,416 - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.zwb.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+2020-06-13 21:11:33,416 - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.zwb.controller.WeChatController.authorize(java.lang.String)
+2020-06-13 21:11:33,417 - Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.zwb.controller.WeChatController.qrAuthorize(java.lang.String)
+2020-06-13 21:11:33,417 - Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.zwb.controller.WeChatController.qrUserInfo(java.lang.String,java.lang.String)
+2020-06-13 21:11:33,417 - Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.zwb.controller.WeixinController.auth(java.lang.String)
+2020-06-13 21:11:33,419 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-06-13 21:11:33,420 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-06-13 21:11:33,461 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-13 21:11:33,461 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-13 21:11:33,479 - Detected @ExceptionHandler methods in sellExceptionHandler
+2020-06-13 21:11:33,509 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-13 21:11:33,908 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-06-13 21:11:34,073 - Registering @ServerEndpoint class: class com.zwb.service.WebSocket
+2020-06-13 21:11:34,096 - Initializing ProtocolHandler ["http-nio-auto-1"]
+2020-06-13 21:11:34,108 - Starting ProtocolHandler ["http-nio-auto-1"]
+2020-06-13 21:11:34,127 - Using a shared selector for servlet write/read
+2020-06-13 21:11:34,344 - Tomcat started on port(s): 6784 (http)
+2020-06-13 21:11:34,348 - Started ProductCategoryMapperTest in 10.078 seconds (JVM running for 11.259)
+2020-06-13 21:11:34,463 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2438dcd: startup date [Sat Jun 13 21:11:24 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:11:34,469 - Closing JPA EntityManagerFactory for persistence unit 'default'
