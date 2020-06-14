@@ -1,7 +1,7 @@
 package com.zwb.service.impl;
 
 import com.zwb.dataobject.ProductCategory;
-import com.zwb.dataobject.dao.ProductCategoryDao;
+//import com.zwb.dataobject.dao.ProductCategoryDao;
 import com.zwb.repository.ProductCategoryRepository;
 import com.zwb.service.ProductCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;

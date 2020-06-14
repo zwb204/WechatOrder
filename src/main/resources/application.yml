@@ -42,5 +42,10 @@ logging:
   level:
     com.zwb.dataobject.mapper: trace   //日志级别设置为trace，可打印出sql
 
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+
+
 #debug: true
 

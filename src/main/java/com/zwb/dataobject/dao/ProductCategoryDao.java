@@ -16,18 +16,18 @@ import java.util.Map;
  * @Author: zwb
  * @CreateTime: 2020/6/11 16:00
  **/
-public class ProductCategoryDao {
-
-    @Autowired
-    private ProductCategoryMapper productCategoryMapper;
-
-
-    public int insertByMap(Map<String, Object> map) {
-        return productCategoryMapper.insertByMap(map);
-    }
-
-
-    public ProductCategory findOneByCategoryType(Integer categoryType) {
-        return productCategoryMapper.findByCategoryType(categoryType);
-    }
-}
+//public class ProductCategoryDao {
+//
+//    @Autowired
+//    private ProductCategoryMapper productCategoryMapper;
+//
+//
+//    public int insertByMap(Map<String, Object> map) {
+//        return productCategoryMapper.insertByMap(map);
+//    }
+//
+//
+//    public ProductCategory findOneByCategoryType(Integer categoryType) {
+//        return productCategoryMapper.findByCategoryType(categoryType);
+//    }
+//}

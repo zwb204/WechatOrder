@@ -786,3 +786,279 @@ Error starting ApplicationContext. To display the auto-configuration report re-r
 2020-06-13 21:11:34,348 - Started ProductCategoryMapperTest in 10.078 seconds (JVM running for 11.259)
 2020-06-13 21:11:34,463 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2438dcd: startup date [Sat Jun 13 21:11:24 GMT+08:00 2020]; root of context hierarchy
 2020-06-13 21:11:34,469 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:29:18,703 - Starting ProductCategoryMapperTest on LAPTOP-RA493M2E with PID 18000 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-06-13 21:29:18,721 - No active profile set, falling back to default profiles: default
+2020-06-13 21:29:18,798 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28194a50: startup date [Sat Jun 13 21:29:18 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:29:19,424 - HV000001: Hibernate Validator 5.3.6.Final
+2020-06-13 21:29:20,250 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:29:20,479 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:29:20,574 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderMasterRepository.
+2020-06-13 21:29:20,585 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.SellerInfoRepository.
+2020-06-13 21:29:20,586 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderDetailRepository.
+2020-06-13 21:29:20,587 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductCategoryRepository.
+2020-06-13 21:29:20,588 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductInfoRepository.
+2020-06-13 21:29:22,693 - Tomcat initialized with port(s): 0 (http)
+2020-06-13 21:29:22,705 - Starting service [Tomcat]
+2020-06-13 21:29:22,706 - Starting Servlet Engine: Apache Tomcat/8.5.23
+2020-06-13 21:29:22,854 - Initializing Spring embedded WebApplicationContext
+2020-06-13 21:29:22,855 - Root WebApplicationContext: initialization completed in 4057 ms
+2020-06-13 21:29:23,071 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-06-13 21:29:23,078 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-06-13 21:29:23,079 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-06-13 21:29:23,079 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-06-13 21:29:23,079 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-06-13 21:29:23,909 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:29:23,929 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-06-13 21:29:24,051 - HHH000412: Hibernate Core {5.0.12.Final}
+2020-06-13 21:29:24,053 - HHH000206: hibernate.properties not found
+2020-06-13 21:29:24,054 - HHH000021: Bytecode provider name : javassist
+2020-06-13 21:29:24,533 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-06-13 21:29:24,708 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-06-13 21:29:25,281 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:29:27,740 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productCategoryMapper' defined in file [F:\Projects\IDEAProjects\sell\target\classes\com\zwb\dataobject\mapper\ProductCategoryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.FileNotFoundException: class path resource [mapper/*.xml] cannot be opened because it does not exist
+2020-06-13 21:29:27,742 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:29:27,749 - Stopping service [Tomcat]
+2020-06-13 21:29:27,763 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-06-13 21:29:27,857 - Starting ProductCategoryMapperTest on LAPTOP-RA493M2E with PID 18000 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-06-13 21:29:27,857 - No active profile set, falling back to default profiles: default
+2020-06-13 21:29:27,867 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cfa2ac5: startup date [Sat Jun 13 21:29:27 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:29:28,326 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:29:28,366 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:29:28,395 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderMasterRepository.
+2020-06-13 21:29:28,396 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.SellerInfoRepository.
+2020-06-13 21:29:28,396 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderDetailRepository.
+2020-06-13 21:29:28,396 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductCategoryRepository.
+2020-06-13 21:29:28,396 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductInfoRepository.
+2020-06-13 21:29:28,670 - Tomcat initialized with port(s): 0 (http)
+2020-06-13 21:29:28,671 - Starting service [Tomcat]
+2020-06-13 21:29:28,674 - Starting Servlet Engine: Apache Tomcat/8.5.23
+2020-06-13 21:29:28,702 - Initializing Spring embedded WebApplicationContext
+2020-06-13 21:29:28,703 - Root WebApplicationContext: initialization completed in 836 ms
+2020-06-13 21:29:28,856 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-06-13 21:29:28,857 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-06-13 21:29:28,857 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-06-13 21:29:28,857 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-06-13 21:29:28,857 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-06-13 21:29:29,169 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:29:29,169 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-06-13 21:29:29,178 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-06-13 21:29:29,217 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:29:29,799 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productCategoryMapper' defined in file [F:\Projects\IDEAProjects\sell\target\classes\com\zwb\dataobject\mapper\ProductCategoryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.FileNotFoundException: class path resource [mapper/*.xml] cannot be opened because it does not exist
+2020-06-13 21:29:29,801 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:29:29,806 - Stopping service [Tomcat]
+2020-06-13 21:29:29,812 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-06-13 21:30:09,865 - Starting ProductCategoryMapperTest on LAPTOP-RA493M2E with PID 2128 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-06-13 21:30:09,871 - No active profile set, falling back to default profiles: default
+2020-06-13 21:30:09,940 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cc4cdb9: startup date [Sat Jun 13 21:30:09 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:30:10,389 - HV000001: Hibernate Validator 5.3.6.Final
+2020-06-13 21:30:11,273 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:30:11,411 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:30:11,774 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderMasterRepository.
+2020-06-13 21:30:11,778 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.SellerInfoRepository.
+2020-06-13 21:30:11,779 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderDetailRepository.
+2020-06-13 21:30:11,780 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductCategoryRepository.
+2020-06-13 21:30:11,780 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductInfoRepository.
+2020-06-13 21:30:13,671 - Tomcat initialized with port(s): 0 (http)
+2020-06-13 21:30:13,685 - Starting service [Tomcat]
+2020-06-13 21:30:13,686 - Starting Servlet Engine: Apache Tomcat/8.5.23
+2020-06-13 21:30:13,827 - Initializing Spring embedded WebApplicationContext
+2020-06-13 21:30:13,827 - Root WebApplicationContext: initialization completed in 3887 ms
+2020-06-13 21:30:14,013 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-06-13 21:30:14,018 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-06-13 21:30:14,019 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-06-13 21:30:14,019 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-06-13 21:30:14,019 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-06-13 21:30:14,798 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:30:14,827 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-06-13 21:30:14,940 - HHH000412: Hibernate Core {5.0.12.Final}
+2020-06-13 21:30:14,942 - HHH000206: hibernate.properties not found
+2020-06-13 21:30:14,944 - HHH000021: Bytecode provider name : javassist
+2020-06-13 21:30:14,990 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-06-13 21:30:15,151 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-06-13 21:30:15,664 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:30:17,479 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productCategoryMapper' defined in file [F:\Projects\IDEAProjects\sell\target\classes\com\zwb\dataobject\mapper\ProductCategoryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.FileNotFoundException: class path resource [mapper/*.xml] cannot be opened because it does not exist
+2020-06-13 21:30:17,481 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:30:17,488 - Stopping service [Tomcat]
+2020-06-13 21:30:17,499 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-06-13 21:30:17,597 - Starting ProductCategoryMapperTest on LAPTOP-RA493M2E with PID 2128 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-06-13 21:30:17,598 - No active profile set, falling back to default profiles: default
+2020-06-13 21:30:17,600 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e993715: startup date [Sat Jun 13 21:30:17 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:30:17,961 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:30:17,995 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:30:18,024 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderMasterRepository.
+2020-06-13 21:30:18,024 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.SellerInfoRepository.
+2020-06-13 21:30:18,025 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderDetailRepository.
+2020-06-13 21:30:18,025 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductCategoryRepository.
+2020-06-13 21:30:18,025 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductInfoRepository.
+2020-06-13 21:30:18,259 - Tomcat initialized with port(s): 0 (http)
+2020-06-13 21:30:18,259 - Starting service [Tomcat]
+2020-06-13 21:30:18,260 - Starting Servlet Engine: Apache Tomcat/8.5.23
+2020-06-13 21:30:18,284 - Initializing Spring embedded WebApplicationContext
+2020-06-13 21:30:18,285 - Root WebApplicationContext: initialization completed in 685 ms
+2020-06-13 21:30:18,426 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-06-13 21:30:18,427 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-06-13 21:30:18,427 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-06-13 21:30:18,427 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-06-13 21:30:18,427 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-06-13 21:30:18,662 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:30:18,662 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-06-13 21:30:18,671 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-06-13 21:30:18,705 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:30:19,150 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productCategoryMapper' defined in file [F:\Projects\IDEAProjects\sell\target\classes\com\zwb\dataobject\mapper\ProductCategoryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.FileNotFoundException: class path resource [mapper/*.xml] cannot be opened because it does not exist
+2020-06-13 21:30:19,151 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:30:19,156 - Stopping service [Tomcat]
+2020-06-13 21:30:19,163 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-06-13 21:31:38,039 - Starting OrderServiceImplTest on LAPTOP-RA493M2E with PID 7880 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-06-13 21:31:38,045 - No active profile set, falling back to default profiles: default
+2020-06-13 21:31:38,075 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2235eaab: startup date [Sat Jun 13 21:31:38 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:31:38,579 - HV000001: Hibernate Validator 5.3.6.Final
+2020-06-13 21:31:39,439 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:31:39,549 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:31:39,627 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderMasterRepository.
+2020-06-13 21:31:39,633 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.SellerInfoRepository.
+2020-06-13 21:31:39,634 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderDetailRepository.
+2020-06-13 21:31:39,636 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductCategoryRepository.
+2020-06-13 21:31:39,637 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductInfoRepository.
+2020-06-13 21:31:41,609 - Tomcat initialized with port(s): 0 (http)
+2020-06-13 21:31:41,624 - Starting service [Tomcat]
+2020-06-13 21:31:41,626 - Starting Servlet Engine: Apache Tomcat/8.5.23
+2020-06-13 21:31:41,804 - Initializing Spring embedded WebApplicationContext
+2020-06-13 21:31:41,805 - Root WebApplicationContext: initialization completed in 3730 ms
+2020-06-13 21:31:42,021 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-06-13 21:31:42,025 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-06-13 21:31:42,025 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-06-13 21:31:42,025 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-06-13 21:31:42,025 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-06-13 21:31:42,761 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:31:42,782 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-06-13 21:31:42,883 - HHH000412: Hibernate Core {5.0.12.Final}
+2020-06-13 21:31:42,884 - HHH000206: hibernate.properties not found
+2020-06-13 21:31:42,886 - HHH000021: Bytecode provider name : javassist
+2020-06-13 21:31:42,939 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-06-13 21:31:43,120 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-06-13 21:31:43,638 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:31:45,453 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productCategoryMapper' defined in file [F:\Projects\IDEAProjects\sell\target\classes\com\zwb\dataobject\mapper\ProductCategoryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.FileNotFoundException: class path resource [mapper/*.xml] cannot be opened because it does not exist
+2020-06-13 21:31:45,455 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:31:45,460 - Stopping service [Tomcat]
+2020-06-13 21:31:45,474 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-06-13 21:31:45,559 - Starting OrderServiceImplTest on LAPTOP-RA493M2E with PID 7880 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-06-13 21:31:45,559 - No active profile set, falling back to default profiles: default
+2020-06-13 21:31:45,562 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b64429e: startup date [Sat Jun 13 21:31:45 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:31:45,916 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:31:45,952 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:31:45,978 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderMasterRepository.
+2020-06-13 21:31:45,978 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.SellerInfoRepository.
+2020-06-13 21:31:45,979 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderDetailRepository.
+2020-06-13 21:31:45,979 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductCategoryRepository.
+2020-06-13 21:31:45,979 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductInfoRepository.
+2020-06-13 21:31:46,219 - Tomcat initialized with port(s): 0 (http)
+2020-06-13 21:31:46,219 - Starting service [Tomcat]
+2020-06-13 21:31:46,220 - Starting Servlet Engine: Apache Tomcat/8.5.23
+2020-06-13 21:31:46,246 - Initializing Spring embedded WebApplicationContext
+2020-06-13 21:31:46,247 - Root WebApplicationContext: initialization completed in 686 ms
+2020-06-13 21:31:46,408 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-06-13 21:31:46,408 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-06-13 21:31:46,409 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-06-13 21:31:46,409 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-06-13 21:31:46,409 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-06-13 21:31:46,657 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:31:46,657 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-06-13 21:31:46,664 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-06-13 21:31:46,703 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:31:47,172 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productCategoryMapper' defined in file [F:\Projects\IDEAProjects\sell\target\classes\com\zwb\dataobject\mapper\ProductCategoryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.FileNotFoundException: class path resource [mapper/*.xml] cannot be opened because it does not exist
+2020-06-13 21:31:47,174 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:31:47,177 - Stopping service [Tomcat]
+2020-06-13 21:31:47,184 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-06-13 21:34:25,851 - Starting ProductCategoryMapperTest on LAPTOP-RA493M2E with PID 11248 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-06-13 21:34:25,851 - No active profile set, falling back to default profiles: default
+2020-06-13 21:34:25,874 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cc4cdb9: startup date [Sat Jun 13 21:34:25 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:34:26,365 - HV000001: Hibernate Validator 5.3.6.Final
+2020-06-13 21:34:27,202 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:34:27,291 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:34:27,350 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderMasterRepository.
+2020-06-13 21:34:27,351 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.SellerInfoRepository.
+2020-06-13 21:34:27,355 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderDetailRepository.
+2020-06-13 21:34:27,375 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductCategoryRepository.
+2020-06-13 21:34:27,376 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductInfoRepository.
+2020-06-13 21:34:29,208 - Tomcat initialized with port(s): 0 (http)
+2020-06-13 21:34:29,222 - Starting service [Tomcat]
+2020-06-13 21:34:29,224 - Starting Servlet Engine: Apache Tomcat/8.5.23
+2020-06-13 21:34:29,357 - Initializing Spring embedded WebApplicationContext
+2020-06-13 21:34:29,358 - Root WebApplicationContext: initialization completed in 3485 ms
+2020-06-13 21:34:29,565 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-06-13 21:34:29,570 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-06-13 21:34:29,571 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-06-13 21:34:29,571 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-06-13 21:34:29,571 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-06-13 21:34:30,291 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:34:30,319 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-06-13 21:34:30,432 - HHH000412: Hibernate Core {5.0.12.Final}
+2020-06-13 21:34:30,433 - HHH000206: hibernate.properties not found
+2020-06-13 21:34:30,434 - HHH000021: Bytecode provider name : javassist
+2020-06-13 21:34:30,478 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-06-13 21:34:30,623 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-06-13 21:34:31,125 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:34:32,936 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productCategoryMapper' defined in file [F:\Projects\IDEAProjects\sell\target\classes\com\zwb\dataobject\mapper\ProductCategoryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.FileNotFoundException: class path resource [mapper/*.xml] cannot be opened because it does not exist
+2020-06-13 21:34:32,938 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:34:32,944 - Stopping service [Tomcat]
+2020-06-13 21:34:32,957 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-06-13 21:34:33,082 - Starting ProductCategoryMapperTest on LAPTOP-RA493M2E with PID 11248 (started by 张文博 in F:\Projects\IDEAProjects\sell)
+2020-06-13 21:34:33,082 - No active profile set, falling back to default profiles: default
+2020-06-13 21:34:33,085 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e28af44: startup date [Sat Jun 13 21:34:33 GMT+08:00 2020]; root of context hierarchy
+2020-06-13 21:34:33,457 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:34:33,495 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-13 21:34:33,520 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderMasterRepository.
+2020-06-13 21:34:33,521 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.SellerInfoRepository.
+2020-06-13 21:34:33,521 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.OrderDetailRepository.
+2020-06-13 21:34:33,521 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductCategoryRepository.
+2020-06-13 21:34:33,522 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.zwb.repository.ProductInfoRepository.
+2020-06-13 21:34:33,744 - Tomcat initialized with port(s): 0 (http)
+2020-06-13 21:34:33,745 - Starting service [Tomcat]
+2020-06-13 21:34:33,746 - Starting Servlet Engine: Apache Tomcat/8.5.23
+2020-06-13 21:34:33,775 - Initializing Spring embedded WebApplicationContext
+2020-06-13 21:34:33,779 - Root WebApplicationContext: initialization completed in 695 ms
+2020-06-13 21:34:33,913 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-06-13 21:34:33,914 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-06-13 21:34:33,914 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-06-13 21:34:33,914 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-06-13 21:34:33,914 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-06-13 21:34:34,150 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:34:34,151 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-06-13 21:34:34,159 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-06-13 21:34:34,196 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:34:34,659 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productCategoryMapper' defined in file [F:\Projects\IDEAProjects\sell\target\classes\com\zwb\dataobject\mapper\ProductCategoryMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.FileNotFoundException: class path resource [mapper/*.xml] cannot be opened because it does not exist
+2020-06-13 21:34:34,660 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-13 21:34:34,664 - Stopping service [Tomcat]
+2020-06-13 21:34:34,671 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
