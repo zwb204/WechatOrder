@@ -3,6 +3,7 @@ package com.zwb.vo;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -11,7 +12,9 @@ import java.util.List;
  * @CreateTime: 2020/5/19 13:41
  **/
 @Data
-public class ProductVO {
+public class ProductVO implements Serializable {
+
+    private static final long serialVersionUID = 7058810874953832992L;
 
     //类目名
     @JsonProperty("name")

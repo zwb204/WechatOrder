@@ -10,6 +10,7 @@ import org.hibernate.annotations.DynamicUpdate;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.criteria.CriteriaBuilder;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -21,7 +22,10 @@ import java.util.Date;
 @Entity
 @Data
 @DynamicUpdate
-public class ProductInfo {
+public class ProductInfo implements Serializable {
+
+    // Redis缓存存储的对象需要实现序列化
+    private static final long serialVersionUID = -7786068976950700831L;
 
     @Id
     private String productId;

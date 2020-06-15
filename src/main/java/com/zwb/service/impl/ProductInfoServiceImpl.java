@@ -8,6 +8,8 @@ import com.zwb.exception.SellException;
 import com.zwb.repository.ProductInfoRepository;
 import com.zwb.service.ProductInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -27,6 +29,11 @@ public class ProductInfoServiceImpl implements ProductInfoService {
     private ProductInfoRepository productInfoRepository;
 
     @Override
+//    @Cacheable(cacheNames = "product",key = "123")
+//    参数使用
+//    @Cacheable(cacheNames = "product",key = "#productId",
+//            condition = "#productId.length() > 3",
+//            unless = "#result.getCode() != 0")
     public ProductInfo findOne(String productId) {
         return productInfoRepository.findOne(productId);
     }
@@ -42,6 +49,7 @@ public class ProductInfoServiceImpl implements ProductInfoService {
     }
 
     @Override
+//    @CachePut(cacheNames = "product",key = "123")
     public ProductInfo save(ProductInfo productInfo) {
         return productInfoRepository.save(productInfo);
     }
